@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Gallery ~Pankaj Garkoti</title>
+    <link rel="shortcut icon" href="images/img_ico.jpg" type="x-icon">
+    <link rel="Stylesheet" href="style.css">;
+</head>
+<body>
+    <h3>Devotional Image Gallery</h3>
+    <div class="full-img" id="fullImgBox">
+        <img src="img (1).jpg" id="fullImg">
+        <span onclick="closefullImg()"><div class="switch">x</div></span>
+    </div>
+    <div class="image-gallery">
+        <img src="images/img (1).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (2).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (3).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (4).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (5).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (6).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (7).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (8).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (9).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (10).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (11).jpg" onclick="openfullImg(this.src)">
+        <img src="images/img (12).jpg" onclick="openfullImg(this.src)">
+</div>
+ <script>
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openfullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+    }
+    function closefullImg(){
+        fullImgBox.style.display="none";
+    }
+ </script>   
+</body>
+</html>
